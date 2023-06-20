@@ -1,4 +1,4 @@
-package demo.mavie.util;
+package demo.movie.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -25,7 +25,7 @@ public class BaseDao {
 
         /* -***********************-mysql数据库-*********************** */
         Class.forName("com.mysql.jdbc.Driver");
-        String uri = "jdbc:mysql://localhost:3306/world?&useUnicode=true&characterEncoding=UTF-8";
+        String uri = "jdbc:mysql://localhost:3306/world?&useUnicode=true&characterEncoding=UTF-8&useSSL=false";
         return DriverManager.getConnection(uri, "root", "root");
 
         /*

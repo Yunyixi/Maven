@@ -16,7 +16,7 @@ public class MovieService {
 
     //查询数据库的电影数据
     public List<Movie> queryAllmovie() {
-        String sql = "select * from movieTest";
+        String sql = "select * from movie";
         Object[] objects = {}; //这里的参数去替换问号，没有问号就空着
         List<Movie> movieList = baseDao.executeQuery(sql, objects, Movie.class);
         return movieList;
